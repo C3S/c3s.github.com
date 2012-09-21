@@ -335,11 +335,18 @@ body{ min-height:100%; background:#fff; float:left; width:100%; font-size:.8125e
 }
 
 
-
+#english {
+  position: relative;
+  top: -5px;
+}
+#english a {
+  color: black;
+  /*font-weight: bold;*/
+}
 
 @media only screen and (max-width: 767px) {
 
-#hof .one_fourth {
+#hof .one_fourth 3
   /*display: block;*/
   width: 45%;
   /*margin-right: 5%;*/
