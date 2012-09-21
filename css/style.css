@@ -338,6 +338,7 @@ body{ min-height:100%; background:#fff; float:left; width:100%; font-size:.8125e
 #english {
   position: relative;
   top: -5px;
+  margin-right: 20px;
 }
 #english a {
   color: black;
