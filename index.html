@@ -27,35 +27,6 @@
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 
-<script type="text/javascript">
-function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
-    
-    var imgs=["banners/changes_violet_w500.jpg",
-              "banners/groovy_red_w500.jpg",
-              "banners/myway_lightgreen_w500.jpg",
-              "banners/indiesdelight_blue_w500.jpg",
-              "banners/mygeneration_moos_w500.jpg",
-              "banners/itsyours_candy_w500.jpg"];
-    
-    var d=document;
-    theValue=imgs[theValue];
-    if (!theValue || !d.getElementById ) return;
-    var obj = d.getElementById(objId);
-    if (obj) obj.src=theValue;    
-}
-</script>
-
-
-<script type="text/javascript">
-/* <![CDATA[ */
-   (function() {
-       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-       s.type = 'text/javascript';
-       s.async = true;
-       s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-       t.parentNode.insertBefore(s, t);
-   })();
-/* ]]> */</script>
 
 
 <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
@@ -529,7 +500,7 @@ Was sind die gemeinsamen Elemente all dieser Bindestrich-Erlebniswelten? Was kan
   </section>
   
   <!-- /END #sessions-->
-  
+
 
   <section id="team" class="about-us content">
     <div class="center">
@@ -879,3 +850,34 @@ return false;
         } catch(e){ console.log(e); }
     });
 </script>  
+
+
+<script type="text/javascript">
+function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
+    
+    var imgs=["banners/changes_violet_w500.jpg",
+              "banners/groovy_red_w500.jpg",
+              "banners/myway_lightgreen_w500.jpg",
+              "banners/indiesdelight_blue_w500.jpg",
+              "banners/mygeneration_moos_w500.jpg",
+              "banners/itsyours_candy_w500.jpg"];
+    
+    var d=document;
+    theValue=imgs[theValue];
+    if (!theValue || !d.getElementById ) return;
+    var obj = d.getElementById(objId);
+    if (obj) obj.src=theValue;    
+}
+</script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+   (function() {
+       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+       s.type = 'text/javascript';
+       s.async = true;
+       s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+       t.parentNode.insertBefore(s, t);
+   })();
+/* ]]> */</script>
