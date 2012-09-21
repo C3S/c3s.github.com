@@ -314,6 +314,25 @@ body{ min-height:100%; background:#fff; float:left; width:100%; font-size:.8125e
 #stage img {width: 100%;}
 
 
+
+/* hall of fame styles*/
+#hof img {
+  height: 70px;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+#hof p, #hof ul {
+  clear: both;
+}
+
+#hof h3 {
+  margin-bottom: 0;
+}
+
+
+
+
 @media only screen and (max-width: 767px) {
 
 #head-fullname {font-size: 2em;}
@@ -337,6 +356,17 @@ body{ min-height:100%; background:#fff; float:left; width:100%; font-size:.8125e
   /* border: 1px solid black; */
   background-color: #cecece;}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* mailchimp form: 
 
