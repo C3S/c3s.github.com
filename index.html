@@ -129,11 +129,11 @@
       
 
       <div class="clear"></div>
-
+<!--
 
       <div id="stage"><img src="images/slider1.jpg" alt="" /></div>
+-->
 
-<!--
 
     <div id="stage" class="slider-wrapper theme-default">
  	<div class="ribbon"></div>
@@ -143,11 +143,11 @@
 		<img src="http://dl.dropbox.com/u/2991622/c3s-pics/alex_due_977x439.png" alt="" />
 		<img src="images/slider1.jpg" alt="" />
 	</div>
-	<div id="htmlcaption" class="nivo-html-caption">
+	<div id="htmlcaption" class="nivo-caption">
 		Test caption for C3S
 	</div>
     </div>
--->
+
     </section>
     
 <section id="roadmap" class="content">
@@ -937,8 +937,8 @@ return false;
 <script type="text/javascript">
 $(window).load(function() {
     $('#slider').nivoSlider({
-        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-<!--    slices: 15, // For slice animations -->
+        effect: 'none', // Specify sets like: 'fold,fade,sliceDown'
+	slices: 15, // For slice animations
         boxCols: 8, // For box animations
         boxRows: 4, // For box animations
         animSpeed: 10000, // Slide transition speed
