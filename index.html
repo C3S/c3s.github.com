@@ -27,35 +27,6 @@
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 
 
-<script type="text/javascript">
-function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
-    
-    var imgs=["banners/changes_violet_w500.jpg",
-              "banners/groovy_red_w500.jpg",
-              "banners/myway_lightgreen_w500.jpg",
-              "banners/indiesdelight_blue_w500.jpg",
-              "banners/mygeneration_moos_w500.jpg",
-              "banners/itsyours_candy_w500.jpg"];
-    
-    var d=document;
-    theValue=imgs[theValue];
-    if (!theValue || !d.getElementById ) return;
-    var obj = d.getElementById(objId);
-    if (obj) obj.src=theValue;    
-}
-</script>
-
-
-<script type="text/javascript">
-/* <![CDATA[ */
-   (function() {
-       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-       s.type = 'text/javascript';
-       s.async = true;
-       s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-       t.parentNode.insertBefore(s, t);
-   })();
-/* ]]> */</script>
 
 
 <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
@@ -66,14 +37,13 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
   <header id="header">
     <div class="center">
 
-            <a href="/index_en.html" style="opacity:0.5;"><img src="images/en.png"></a>
-
       <nav id="main-menu">
         <ul >
           <li><a href="#home">Start</a></li>
           <li><a href="#roadmap">Roadmap</a></li>
           <li><a href="#howitworks">Wie es funktioniert</a></li>
           <li><a href="#about">Über uns</a></li>
+          <li><a href="#hof">Hall of Fame</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Kontakt</a></li>
           <li><a href="#howitworks">Newsletter</a></li>
@@ -88,6 +58,7 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
             <li><a href="#roadmap" class="visualNav">Roadmap</a></li>
             <li><a href="#howitworks" class="visualNav">Wie es funktioniert</a></li>
             <li><a href="#about" class="visualNav">Über uns</a></li>
+            <li><a href="#hof" class="visualNav">Hall of Fame</a></li>
             <li><a href="#team" class="visualNav">Team</a></li>
             <li><a href="#contact" class="visualNav">Kontakt</a></li>
             <li><a href="#howitworks" class="visualNav">Newsletter</a></li>
@@ -97,8 +68,11 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
       
       <!-- /END nav -->
 
+      <div class="clear"></div>
       
+      <span id="english"><a href="/index_en.html" style="opacity:0.5;">ENGLISH VERSION</a></span>
       <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://www.c-3-s.eu"></a>
+
       <noscript>
         <a href="http://flattr.com/thing/724265/C3S-Caring-for-free-culture" target="_blank">
           <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
@@ -120,18 +94,31 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
         <h2 class="align-center" id="head-tagline">C3S. Caring for free culture.</h2>
       </hgroup>
       
-      <p class="align-center">Die C3S ist eine gemeinschaftliche Initiative mit Künstlern und für Künstler, eine neue und richtungsweisende europäische Verwertungsgesellschaft zu gründen. Eine nicht-exklusive Verwertungsgesellschaft, die es Musikern ermöglicht, ihre unter nicht-kommerziellen Creative-Commons-Lizenzen veröffentlichten Werke außerhalb traditioneller Schemata kommerziell verwerten zu lassen. Mehr als das, die C3S wird auch offen sein für die kommerzielle Verwertung von Werken unter anderen freien Lizenzen einschließlich der Werke, die ohne explizit definierte Lizenz veröffentlicht werden.</p>
+      <p class="align-center">Die C3S ist eine gemeinschaftliche Initiative mit KünstlerInnen und für KünstlerInnen, eine neue und richtungsweisende europäische Verwertungsgesellschaft zu gründen. Eine nicht-exklusive Verwertungsgesellschaft, die es MusikerInnen ermöglicht, ihre unter nicht-kommerziellen Creative-Commons-Lizenzen veröffentlichten Werke außerhalb traditioneller Schemata kommerziell verwerten zu lassen. Mehr als das, die C3S wird auch offen sein für die kommerzielle Verwertung von Werken unter anderen freien Lizenzen einschließlich der Werke, die ohne explizit definierte Lizenz veröffentlicht werden.</p>
 
       <a name="barcamp"></a><br /><br /><br />
       <h3 class="align-center">+++ News +++</h3>
        <p id="intro">Absichtserklärung zum geplanten Beitritt zur C3S</p>
        <p class="align-center">Ihr möchtet Euer Interesse an der C3S als alternativer Verwertungsgesellschaft zeigen? Jetzt könnt Ihr offiziell Eure Absicht erklären, der C3S bei Ihrer Gründung beitreten zu wollen. Selbst wenn Ihr derzeit Mitglied einer anderen Verwertungsgesellschaft seid, könnt Ihr unterzeichnen. Wenn die C3S den Antrag auf Zulassung als Verwertungsgesellschaft stellt, müssen wir Euer Interesse daran belegen können.</p>
-       <p class="align-center"><strong>Seid eine/r der Ersten - <a href="http://c3s.cc/legal/absichtserklaerung.pdf">hier gehts zum PDF!</a></strong></p>
+       <h4 class="align-center"><strong>Seid eine/r der Ersten - <a href="http://c3s.cc/legal/absichtserklaerung.pdf">hier gehts zum PDF!</a></strong></h4>
+       <p>
+          <p class="align-center">Außerdem neu:</p>
+          <p class="align-center">
+            :: &nbsp; die <a href="#hof"><strong>Hall of Fame</strong></a> unserer UnterstützerInnen &nbsp; ::</br>
+            :: &nbsp; <a href="demoflyer.pdf"><strong>Flyer (s/w, PDF, 501kb)</strong></a> zum Ausdrucken & Verteilen &nbsp; ::</br>
+            :: &nbsp; <a href="#donation"><strong>T-Shirts & Merchandise</strong></a> mit Spendenanteil &nbsp; ::</br>
+            :: &nbsp; <a href="http://www.meetup.com/c3s-cc/"><strong>C3S-Treffen in Deiner Stadt</strong></a> - wenn nicht, selbst organisieren! &nbsp; ::</br>
+          </p>
+       </p>
+      
+       <!--
        <p class="align-center">* * *</p>
        <p id="intro">C3S Barcamp #1</p>
        <p class="align-center">Vielen, vielen Dank an all diejenigen, die das <a href="https://wiki.openmusiccontest.org/BarcampSept12/">C3S Barcamp #1</a> am 2. September 2012 unterstützt, finanziert und besucht haben! Es war (um es vorsichtig auszudrücken) überwältigend, Eure Motivation zu erleben und Euer positives Feedback zu erhalten. Eure Bereitschaft, uns so umfassend zu unterstützen, ist grandios und mehr als wir erwartet haben. </p>
        <p class="align-center"><strong>Ein großes Danke vom gesamten Team! Wir freuen uns auf das nächste Event mit Euch - und Euren Freunden!</strong></p>
-       <br>
+       -->
+
+      <br>
 
       <p class="social align-center">
         <a href="https://twitter.com/C3S"><img src="images/b_icon_twitter.png"></a>
@@ -143,9 +130,22 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
 
       <div class="clear"></div>
 
-      <div id="stage">
-        <img src="images/slider1.jpg" alt="" />
-      </div>
+
+      <div id="stage"><img src="images/slider1.jpg" alt="" /></div>
+<!--
+
+    <div id="stage" class="slider-wrapper theme-default">
+ 	<div class="ribbon"></div>
+	<div id="slider" class="nivoSlider">
+		<img src="http://dl.dropbox.com/u/2991622/c3s-pics/barcamp_intro_977x439.png" alt="" />
+		<img src="http://dl.dropbox.com/u/2991622/c3s-pics/barcamp_buttons_977x439.png" alt="" />
+		<img src="http://dl.dropbox.com/u/2991622/c3s-pics/alex_due_977x439.png" alt="" />
+		<img src="images/slider1.jpg" alt="" />
+	</div>
+    </div>
+-->
+
+
     </section>
     
 <section id="roadmap" class="content">
@@ -169,10 +169,10 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
             <h4 class="align-center">Aussicht.</h4>
           </div>
           <p>
-            Wir hoffen, dass wir die Gründung der C3S als Organisation (als juristische Person) im Spätherbst 2012 bekannt geben können. Der Antrag auf Zulassung als deutsche Verwertungsgesellschaft sollte gegen Anfang 2013 beim DPMA eingereicht werden. 
+            Wir hoffen, dass wir die Gründung der C3S als Organisation (als juristische Person) Anfang 2013 bekannt geben können. Der Antrag auf Zulassung als deutsche Verwertungsgesellschaft sollte ebenfalls gegen Anfang 2013 beim DPMA eingereicht werden. 
           </p>
           <p>
-            Wichtiger aber ist der Umstand, dass wir die Unterstützung aller Urheber benötigen, die bereit sind, der C3S nach ihrer Zulassung beizutreten. Eure Absichtserklärung ist notwendig, um die Nachfrage nach einer solchen Verwertungsgesellschaft zu belegen.
+            Wichtiger aber ist der Umstand, dass wir die Unterstützung aller UrheberInnen benötigen, die bereit sind, der C3S nach ihrer Zulassung beizutreten. Eure Absichtserklärung ist notwendig, um die Nachfrage nach einer solchen Verwertungsgesellschaft zu belegen.
           </p>
 
         </div >
@@ -185,10 +185,10 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
             Ihr und Eure Werke seid der Kern und bildet den wertvollsten Teil des Geschäftsmodells, das die C3S beim DPMA einreichen wird, um die Stabilität und Umsetzbarkeit der Verwertungsgesellschaft zu belegen. Ihr <strong><em>seid</em></strong> die Verwertungsgesellschaft. Aber eben keine traditionelle.
           </p>  
           <p>
-            Deshalb werden wir schon in Kürze beginnen, Euch um Eure Unterstützung zu bitten. Darum, dass Ihr Eure Absicht bestätigt, der C3S beizutreten, wenn es soweit ist.
+            Deshalb bitten wir Euch um Eure Unterstützung. Darum, dass Ihr Eure <a href="http://www.c3s.cc/legal/absichtserklaerung.pdf">Absicht bestätigt, der C3S beizutreten</a>, wenn es soweit ist.
           </p>
           <p>
-            Tragt euch <strong>jetzt</strong> in den <a href="#howitworks">Newsletter</a> ein, damit wir Euch erreichen, wenn der Countdown beginnt!
+            Tragt Euch <strong>jetzt</strong> in den <a href="#howitworks">Newsletter</a> ein, um keine unserer Aktionen zu verpassen - damit wir Euch erreichen, wenn der Countdown beginnt!
           </p>
           <p>
             <strong>Es ist Euer Projekt. Ihr könnt bestimmen, wie Eure Werke verwertet und Eure Rechte wahrgenommen werden sollen. Seid dabei.</strong>
@@ -220,9 +220,9 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
             <div class="title_header">
               <h4 class="align-center">Die Idee.<br>&nbsp;</h4>
             </div>
-            <p>Die C3S wird einen neuen, internationalen und vorwiegend am Online-Segment orientierten Markt öffnen. Sie richtet sich an Musiker, die traditionellen Verwertungsgesellschaften nicht beitreten möchten oder können, ohne ihren bevorzugten Weg der Lizenzierung aufzugeben und dennoch Umsätze mit ihren Werken erzielen möchten. Auf längere Sicht beabsichtigt die C3S, Niederlassungen in allen europäischen Ländern anzubieten, um ein einheitliches Lizenzierungsmodell regional übergreifend anbieten zu können.</p>
-            <p>Die kostenlose Weitergabe von Werken zu nicht-kommerziellen Zwecken wird von der C3S unterstützt werden, kann jedoch eingeschränkt sein durch die Intention des Urhebers und die von ihm gewählte Lizenz.</p>
-            <p>Die Mitgliedschaft in der C3S wird nur Urhebern möglich sein. Das vermeidet eine Verzerrung der Diskussionen der Mitgliederschaft durch die Interessen von Rechtsnachfolgern oder Verlegern. Die C3S wird jedoch offen sein für alle Urheber: Für professionelle Komponisten, semi-professionelle Musiker ebenso wie für so genannte Prosumer. Ziel der Öffnung zum Prosumer ist die Heranführung und Förderung des kreativen Umgangs mit Musik.</p>
+            <p>Die C3S wird einen neuen, internationalen und vorwiegend am Online-Segment orientierten Markt öffnen. Sie richtet sich an MusikerInnen, die traditionellen Verwertungsgesellschaften nicht beitreten möchten oder können, ohne ihren bevorzugten Weg der Lizenzierung aufzugeben und dennoch Umsätze mit ihren Werken erzielen möchten. Auf längere Sicht beabsichtigt die C3S, Niederlassungen in allen europäischen Ländern anzubieten, um ein einheitliches Lizenzierungsmodell regional übergreifend etablieren zu können.</p>
+            <p>Die kostenlose Weitergabe von Werken zu nicht-kommerziellen Zwecken wird von der C3S unterstützt werden, kann jedoch eingeschränkt sein durch die Intention der/s UrheberIn/s und die von ihr oder ihm gewählte Lizenz.</p>
+            <p>Die Mitgliedschaft in der C3S wird nur UrheberInnen möglich sein. Das vermeidet eine Verzerrung der Diskussionen der Mitgliederschaft durch die Interessen von RechtsnachfolgernInnen oder VerlegerInnen. Die C3S wird jedoch offen sein für alle UrheberInnen: Für professionelle KomponistInnen, semi-professionelle MusikerInnen ebenso wie für so genannte ProsumerInnen. Ziel der Öffnung zur/m ProsumerIn ist die Heranführung und Förderung des kreativen Umgangs mit Musik.</p>
             <p>Darüber hinaus wird die C3S kulturelle Projekte und schulische sowie weiterbildende Angebote insbesondere zu Copyright- bzw. Urheberrechtsthemen fördern und unterstützen.</p>
           </div>
           
@@ -231,9 +231,9 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
               <h4 class="align-center">Unsere Ziele: <br>Das ist für Euch drin.</h4>
             </div>
             <ul>
-              <li><strong>Bessere Einnahmemöglichkeiten</strong> für Musikern, die alternative Lizenzmodelle nutzen.</li>
+              <li><strong>Bessere Einnahmemöglichkeiten</strong> für MusikerInnen, die alternative Lizenzmodelle nutzen.</li>
               <li><strong>Keine Vorabzahlung:</strong> Geringe Mitgliedsbeiträge, die von erwirtschafteten Lizenzgebühren abgezogen werden – kein Negativkonto.</li>
-              <li><strong>Gesichertes Mindesteinkommen:</strong> Du erhältst 100% der monatlichen Lizenzgebühren, so lange ein fester Schwellenwert nicht überschritten wird.</li>
+              <li><strong>Gesichertes Sockeleinkommen:</strong> Du erhältst 100% der monatlichen Lizenzgebühren, so lange ein fester Schwellenwert nicht überschritten wird.</li>
               <li><strong>Werkbasierte Verwertung:</strong> Du wirst entscheiden können, welche Werke die C3S verwalten soll.</li>
               <li><strong>Pay-per-play:</strong> Die Verteilung der Lizenzgebühren soll basierend auf einem 1:1-Schlüssel erfolgen, so weit es die technologische Umsetzung zulässt.</li>
               <li><strong>Du behältst die vollständige Kontrolle über Deine Rechte,</strong> die C3S ist das ausführende Organ.</li>
@@ -241,7 +241,7 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
               <li><strong>Einfache Lizenzierung</strong> Deiner Werke für <strong>Games, Film und Werbung.</strong></li>
               <li><strong>Volle und gleiche Stimmrechte</strong> für alle Mitglieder.</li>
               <li><strong>Transparenz</strong> für alle Zahlungstransaktionen und Lizenzierungsvorgänge.</li>
-              <li><strong>Geringer Verwaltungsaufwand für unabhängige Künstler</strong> durch weitgehend automatisierte Lizenzverträge.</li>
+              <li><strong>Geringer Verwaltungsaufwand für unabhängige KünstlerInnen</strong> durch weitgehend automatisierte Lizenzverträge.</li>
             </ul>
           </div>
               
@@ -252,11 +252,11 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
             <p>Vorteile für Content Provider, Lizenznehmer und private Nutzer:</p>
             <ul>
               <li><strong>Vereinfachung:</strong> Europaweite Lizenzierung und klare Tarifstrukturen.</li>
-              <li><strong>One-Stop-Lösung zur Lizenzierung:</strong> Vermittlung von Lizenzen zur Zweitverwertung zwischen Content Providern und Lizenznehmern.</li>
+              <li><strong>One-Stop-Lösung zur Lizenzierung:</strong> Vermittlung von Lizenzen zur Zweitverwertung zwischen Content Providern und LizenznehmerInnen.</li>
               <li><strong>Einsatz aktueller Technologie:</strong> Automatisierte Playlisten-Übermittlung, intelligente Indexierung und Suche, automatisiertes Monitoring von TV/Radio/Online-Kanälen, Online-Lizenzierung, Micro Payment</li>
               <li><strong>Etablierung neuer Märkte</strong> für (Net)Labels und Distributoren.</li>
               <li><strong>Rechtssicherheit</strong> im Einsatz von Creative-Commons- und freien Lizenzen bei Unternehmen.</li>
-              <li><strong>Klare und akzeptable Tarife</strong> mit vorhersehbaren Lizenzkosten für Veranstalter.</li>
+              <li><strong>Klare und akzeptable Tarife</strong> mit vorhersehbaren Lizenzkosten für VeranstalterInnen.</li>
               <li><strong>Kostenlose Downloads, frei zum privaten und legalen Tausch</strong> für Musik-Fans.</li>
               <li>Unterstützung von <strong>Projekten im Bildungsbereich,</strong> um <strong>Bewusstsein und Verständnis im Umgang mit Urheberrecht, Creative Commons und freien Lizenzen</strong> zu vermitteln.</li>
             </ul>
@@ -266,11 +266,11 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
             <div class="title_header">
               <h4 class="align-center">OMFG!!! <br>Ich bin dabei!</h4>
             </div>
-            <p>Ja – meine Stimme habt Ihr. Ich möchte über die C3S auf dem Laufenden gehalten werden.</p>
+            <p>Ja – meine Stimme habt ihr. Ich möchte über die C3S auf dem Laufenden gehalten werden.</p>
             
 
 <div id="templateBody" class="bodyContent rounded6">
-  <div class="indicates-required"><span class="asterisk">*</span>  erforderlich</div>
+  <div class="indicates-required"><span class="asterisk">*</span>  erforderlich</div></br>
     <form action="http://openmusiccontest.us5.list-manage2.com/subscribe/post" method="POST">
     <input type="hidden" name="u" value="fb2b7ee86d5387c5ff789d44f">
     <input type="hidden" name="id" value="ffb04c507c">
@@ -305,7 +305,16 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
         <input type="url" autocapitalize="off" autocorrect="off" name="MERGE4" id="MERGE4" size="25" value="">
       </div>
     </div>
-  </div>
+
+    <div class="mergeRow dojoDndItem mergeRow-dropdown" id="mergeRow-5">
+       <label for="MERGE5"><strong>Sprache</strong> <span class="asterisk">*</span></label>
+       <div class="field-group" style="float: none;margin: 3px 0 15px 0;padding: 0px;border: none;">
+          <select id="MERGE5" name="MERGE5" style="width: 300px;margin: 2px;"><option value="German">German</option><option value="English">English</option></select>
+       </div>
+    </div>
+
+</div>
+
   <div class="mergeRow">
     <label>Bevorzugtes Format</label>
     <div class="field-group groups">
@@ -343,16 +352,23 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
           </div>
         </div>
         <div class="clear"></div>
-        
+</section>
+ 
+<section id="donation" class="content">
+
    <div class="center">
 
         <div class="columns">
         <!-- START second row HOW-IT-WORKS-->
-
-            <div class="four_fourth last">
+  
+            <div class="one_half">
     
-                <p class="align-center">Unterstütze die C3S mit Deiner Spende - egal, wie klein der Betrag, er zahlt sich aus. Geldbündel weisen wir natürlich keineswegs zurück... </p>
+                <div class="title_header">
+                    <h4 class="align-center">Spendenbox</h4>
+                </div>
 
+                <p class="align-center">Unterstütze die C3S mit Deiner Spende - egal, wie klein der Betrag, er zahlt sich aus. Geldbündel weisen wir natürlich keineswegs zurück... </p>
+                </br></br>
                 <div class="align-center">
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="hidden" name="cmd" value="_s-xclick">
@@ -362,11 +378,24 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
                     </form>
                     </br>
                 </div>
-        
+                </br></br>      
                 <p class="align-center">So lange die C3S noch nicht gegründet ist, gehen alle Spenden an den gemeinnützigen Verein <a href="#contact">OpenMusicContest.org e.V.</a>. Der Aufbau der C3S ist derzeit das einzige Projekt des OpenMusicContest.org e.V.; Spenden werden genutzt, um organisatorische Kosten der C3S zu decken.</p>
             </div>
+
+            <div class="one_half last">
+
+                <div class="title_header">
+                    <h4 class="align-center">Shoppen & spenden</h4>
+                </div>
+
+                <p class="align-center">Ihr möchtet die C3S unterstützen, jetzt schon etwas dafür erhalten und gleichzeitig die C3S noch bekannter machen? Jetzt gibts <a href="http://www.getdigital.de/products/C3S_Logo" target="_blank"><strong>T-Shirts, Girlie-Ts, Hoodies, Sweater und Taschen</strong> bei getdigital.de</a>!</p>
+                <p style="position:relative; left:50%; margin-left:-75px;"><a href="http://www.getdigital.de/products/C3S_Logo"><img src="http://www.getdigital.de/images/produkte/t4/t4_C3S_front.jpg" width="150px"></a></p>
+                <p class="align-center">Von jedem gekauften Artikel gehen 6 Euro abzüglich der Mehrwertsteuer an die C3S.</p>
+
+            </div>
+
             <!-- END column donation row-->
-            
+
         </div>
         <!-- END columns-->
 
@@ -449,6 +478,186 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
   </section>
   <!-- /END #blog-->
 
+
+
+  <section id="hof" class="content">
+    <div class="center">
+      <h2 class="title"><span>Supporter</span></h2>
+
+      <h2 class="align-center">Hall of Fame</h2>
+        <div class="center">
+        <div class="columns">
+          <p class="align-center">Seit Oktober 2012 finden sich in den honorablen Hallen der Ehre all diejenigen SupporterInnen wieder, die mit Crowdfunding-Aktionen oder Spenden zeigen möchten, dass sie die C3S unterstützen. Schickt uns mit Eurer Spende in einer Notiz das Stichwort "Hall of Fame" und die notwendigen Daten (Name, URL, Bild 500x500 px), und Ihr seid drin! Anonyme Spenden sind natürlich ebenfalls möglich.</p>
+          <p class="align-center"><strong>5+ € -> Name (kann Alias sein)</br>
+          15+ € -> Name & Link</br>
+          30+ € -> Name & Link & Bild</strong></p>
+          <h4 class="align-center"><a href="#donation">Hier geht's lang zur Spendenbox!</a></h4>
+          <p class="align-center">Eure Unterstützung vergessen wir nicht - wir versprechen, Euch in allen weiteren Versionen der Site in den Credits zu behalten. Wenn Ihr gelöscht werden wollt, reicht eine kurze Mail an uns.</p>
+        </div>
+      
+      </div>
+      <div class="clear"></div>
+ </div>
+
+    <div class="center">
+
+    <div class="columns">
+
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.getdigital.de/products/C3S_Logo"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>,)</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://lxdu.de"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Alex Due</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://voidiac.com"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Björn Schulz</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.foxhall.de"><img class="image_shadow" src="images/hof/ciaranfarrell_q200.png" width="70px"></p><p><h5>Ciaran Farrell</h5></p></a><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.getdigital.de/products/C3S_Logo"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Daniel Strunz</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.getdigital.de/products/C3S_Logo"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Dante van Tenedo</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.lengalia.com"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>David Zschille</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.haseland.net"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Haseland Magnetschallplatten</h5></p></a><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://soundcloud.com/jon-goodfield"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Jonathan Goodfield</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://leonfrancisfarrow.bandcamp.com/"><img class="image_shadow" src="images/hof/leonfrancisfarrow_q200.png" width="70px"></p><p><h5>Leon Francis Farrow</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://machtdose.de"><img class="image_shadow" src="images/hof/machtdose_q200.png" width="70px"></p><p><h5>Machtdose</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://matthiasbauer.name/"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Matthias Bauer</h5></p></a><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.tokksvoitto.de/"><img class="image_shadow" src="images/hof/mauricekalinowski_q200.png" width="70px"></p><p><h5>Maurice Kalinowski</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.moritzpgkatz.de"><img class="image_shadow" src="images/hof/moritzpgkatz_q200.png" width="70px"></p><p><h5>Moritz P.G. Katz</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.soundposter.com/c3s/"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Soundposter</h5></p></a><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://www.pentanox.eu"><img class="image_shadow" src="images/hof/c3s-logo_white-on-grey_q200.png" width="70px"></p><p><h5>Steven Valyi</h5></p></a><div class="clear"></div></div>
+
+      <div class="one_half" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://technologycamp.de"><img class="image_shadow" src="images/hof/technologycamp2012_q200.png" width="70px"></p><p><h5>Technology Camp 2012 Hannover</h5></p></a><div class="clear"></div></div>
+      <div class="one_half last" style="text-align:center;"><p style="position:relative; left:50%; margin-left:-35px;"><a href="http://zoeleela.com"><img class="image_shadow" src="images/hof/zoeleela_q200.png" width="70px"></p><p><h5>ZOE.LEELA</h5></p></a><div class="clear"></div></div>
+
+
+<!--
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.poesiepop.de">Nica Altenburg</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.urheberrechtscafe.de/">Astrid Christofori</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.forum-factory.de">Björn Loeckel</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h5><a href="http://www.getdigital.de/products/C3S_Logo">Daniel Kollmann</a></h5></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.tonmagnet.de">Daniel Widmer</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.getdigital.de/products/C3S_Logo">dvdkhlng</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.supermarkt-berlin.net">SUPERMARKT Team</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h5><a href="http://soundcloud.com/msskellington">Jane Gladys Netto</a></h5></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.labicicleta.de">Javier Tucat Moreno</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.last-site-living-records.net">Lukas Laufenberg</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.dr-obisch.de">Marcus Drobisch</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h5><a href="http://www.melancholodic.de">Melancholodic</a></h5></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://blooz.de">Blooz</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.beforeiforget.de">Markus Freitag</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://pitvalid.de">Pitvalid</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h5><a href="http://www.numblog.de/">Matthias Gutjahr</a></h5></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://die-kaelte.de">Mike York</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.getdigital.de/products/C3S_Logo">Nino Micklich</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://freiekulturundmusik.wordpress.com/">Philip Stade</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h5><a href="http://www.ruben-grimm.de">Ruben Grimm</a></h5></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.facebook.com/pages/Sarah-Benz/241990859201927">Sarah Benz</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://arkipelbleu.bandcamp.com/">Arkipel Bleü</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h5><a href="http://www.traficsonore.net">Susanne Laurentius</a></h5></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h5><a href="http://www.rna-berlin.de">RNA - Random Noise Alliance</a></h5></p><div class="clear"></div></div>
+
+
+      <div><p><a href="http://www.conterm-red.de/"><h5 style="text-align:center;">conterm_red</h5></a></p><div class="clear"></div></div>
+-->
+
+      <div style="text-align:center;"><p><h5><a href="http://www.poesiepop.de">Nica Altenburg</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.urheberrechtscafe.de/">Astrid Christofori</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.forum-factory.de">Björn Loeckel</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.getdigital.de/products/C3S_Logo">Daniel Kollmann</a></h5></p><div class="clear"></div></div>
+
+      <div style="text-align:center;"><p><h5><a href="http://www.tonmagnet.de">Daniel Widmer</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.getdigital.de/products/C3S_Logo">dvdkhlng</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.supermarkt-berlin.net">SUPERMARKT Team</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://soundcloud.com/msskellington">Jane Gladys Netto</a></h5></p><div class="clear"></div></div>
+
+      <div style="text-align:center;"><p><h5><a href="http://www.labicicleta.de">Javier Tucat Moreno</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.last-site-living-records.net">Lukas Laufenberg</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.dr-obisch.de">Marcus Drobisch</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.melancholodic.de">Melancholodic</a></h5></p><div class="clear"></div></div>
+
+      <div style="text-align:center;"><p><h5><a href="http://blooz.de">Blooz</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.beforeiforget.de">Markus Freitag</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://pitvalid.de">Pitvalid</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.numblog.de/">Matthias Gutjahr</a></h5></p><div class="clear"></div></div>
+
+      <div style="text-align:center;"><p><h5><a href="http://die-kaelte.de">Mike York</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.getdigital.de/products/C3S_Logo">Nino Micklich</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://freiekulturundmusik.wordpress.com/">Philip Stade</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://www.ruben-grimm.de">Ruben Grimm</a></h5></p><div class="clear"></div></div>
+
+      <div style="text-align:center;"><p><h5><a href="http://www.facebook.com/pages/Sarah-Benz/241990859201927">Sarah Benz</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp;    
+      <a href="http://arkipelbleu.bandcamp.com/">Arkipel Bleü</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; 
+      <a href="http://www.traficsonore.net">Susanne Laurentius</a></p><div class="clear"></div></div>
+
+      <div style="text-align:center;"><p><h5><a href="http://www.rna-berlin.de">RNA - Random Noise Alliance</a>
+      &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; 
+      <a href="http://www.conterm-red.de/">conterm_red</h5></a></p><div class="clear"></div></div>
+
+    </div>
+
+
+    <div </class="columns">
+
+      <div style="text-align:center;"><p><h6>Andi Popp &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Andreas Franke &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; XOL DOG 400 &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Lunt435</h6></p><div class="clear"></div></div>
+      <div style="text-align:center;"><p><h6>Bad Panda Records &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Zwackelmann &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Jessica Schmidt &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Kai Kühnel für „Die Schönen & das Biest“</h6></p><div class="clear"></div></div>
+      <div style="text-align:center;"><p><h6>Martin Windolph &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Matthias Hucke &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Michael Türk &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Moritz Christoph Rudolf Bierling</h6></p><div class="clear"></div></div>
+      <div style="text-align:center;"><p><h6>Sabine K. &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Tante Lore &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; lastffm &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; upthiele &nbsp;&nbsp;&nbsp; :: &nbsp;&nbsp;&nbsp; Ulrich Tausend</h6></p><div class="clear"></div></div>
+
+<!--
+      <div class="one_fourth" style="text-align:center;"><p><h6>Andi Popp</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>Andreas Franke</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>XOL DOG 400</h6></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h6>Lunt435</h6></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h6>Bad Panda Records</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>Zwackelmann</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>Jessica Schmidt</h6></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h6>Kai Kühnel für</br>„Die Schönen & das Biest“</h6></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h6>Martin Windolph</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>Matthias Hucke</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>Michael Türk</h6></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h6>Moritz Christoph Rudolf Bierling</h6></p><div class="clear"></div></div>
+
+      <div class="one_fourth" style="text-align:center;"><p><h6>Sabine K.</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>Tante Lore</h6></p><div class="clear"></div></div>
+      <div class="one_fourth" style="text-align:center;"><p><h6>lastffm</h6></p><div class="clear"></div></div>
+      <div class="one_fourth last" style="text-align:center;"><p><h6>upthiele</h6></p><div class="clear"></div></div>
+
+      <div><p><h6 style="text-align:center;">Ulrich Tausend</h6></p><div class="clear"></div></div>
+    </div>
+-->
+
+</div>
+<!-- /END columns-->
+
+</div<
+<!-- /END center-->
+
+
+    <div class="clear"></div>    
+  </section>
+  
+  <!-- /END #sessions-->
 
 
   <section id="team" class="about-us content">
@@ -635,7 +844,8 @@ function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
           Meik Michalke (Vorsitzender)<br>
           Christoph Scheid (stellv. Vorsitzender)<br>
           Marcel Hennes (stellv. Vorsitzender)<br>
-          Sebastian Schmachtel (Schatzmeister, stellv. Vorsitzender)<br>
+          Sebastian Schmachtel (stellv. Vorsitzender)<br>
+	  Holger Schwetter (Schatzmeister)<br>
           siehe <a href="http://www.openmusiccontest.org/impressum">Impressum des OMC</a> für mehr Informationen.
           <br>
 
@@ -721,8 +931,36 @@ return false;
 
   -->
 
+<!--
 
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+	slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 10, // Slide transition speed
+        pauseTime: 50000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
 
+-->
 
 <script type="text/javascript">
     $(document).ready(function(){ 
@@ -799,3 +1037,34 @@ return false;
         } catch(e){ console.log(e); }
     });
 </script>  
+
+
+<script type="text/javascript">
+function diva_imgBySel(objId,theValue) { //v0.1 divaHTML.com
+    
+    var imgs=["banners/changes_violet_w500.jpg",
+              "banners/groovy_red_w500.jpg",
+              "banners/myway_lightgreen_w500.jpg",
+              "banners/indiesdelight_blue_w500.jpg",
+              "banners/mygeneration_moos_w500.jpg",
+              "banners/itsyours_candy_w500.jpg"];
+    
+    var d=document;
+    theValue=imgs[theValue];
+    if (!theValue || !d.getElementById ) return;
+    var obj = d.getElementById(objId);
+    if (obj) obj.src=theValue;    
+}
+</script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+   (function() {
+       var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+       s.type = 'text/javascript';
+       s.async = true;
+       s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+       t.parentNode.insertBefore(s, t);
+   })();
+/* ]]> */</script>
