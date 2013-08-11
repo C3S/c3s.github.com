@@ -130,7 +130,7 @@ GRID LIST WITH THUMBNAILS
 /*--------------------------
 LINKS
 ---------------------------*/
-a{ -webkit-transition-property:background color; -webkit-transition-duration:0.12s; -webkit-transition-timing-function:ease-out; -moz-transition-property:background color; -moz-transition-duration:0.12s; -moz-transition-timing-function:ease-out; -o-transition-property:background color; -o-transition-duration:0.12s; -o-transition-timing-function:ease-out}
+/* a{ -webkit-transition-property:background color; -webkit-transition-duration:0.12s; -webkit-transition-timing-function:ease-out; -moz-transition-property:background color; -moz-transition-duration:0.12s; -moz-transition-timing-function:ease-out; -o-transition-property:background color; -o-transition-duration:0.12s; -o-transition-timing-function:ease-out} */
 a{text-decoration:none; color:#a60000;}
 a:visited{opacity:0.8; /* A bit basic,but it's a bare minumum... */}
 a:hover{text-decoration:none; color:#000}
